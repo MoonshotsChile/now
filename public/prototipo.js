@@ -12,6 +12,9 @@ window.onload=function(){
 function handler() {
     var lighbox = document.getElementById("lightbox")
     lighbox.style.display = "block";
-    
-    
+}
+
+function closeLighbox(){
+    var lighbox = document.getElementById("lightbox")
+    lighbox.style.display = "none";
 }
