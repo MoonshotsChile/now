@@ -1,0 +1,26 @@
+body {
+    background: url("home.png") no-repeat fixed;
+    background-size: cover;
+}
+
+#lightbox{
+    display: none;
+    position:absolute;
+    height: 500px;
+    width: 360px;
+    left: 35%;
+    top: 15%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.home{
+    height: 1200px;
+}
+
+#buttonfake{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: 0px;
+    left: 0px;
+}
