@@ -1,0 +1,10 @@
+body {
+    background: url("comprobante.png") no-repeat fixed;
+    background-size: cover;
+}
+
+.home{
+    width: 100%;
+    height: 100%;
+}
+
