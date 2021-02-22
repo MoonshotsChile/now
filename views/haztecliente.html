@@ -5,6 +5,7 @@
   <title>Hazte cliente</title>
   <!-- <link rel="stylesheet" href="next.css"> -->
   <!-- <script src="next.js"></script> -->
+  <script src="prototipo.js"></script>
 </head>
 <body>
 	<h1>¡Un plan de Cuenta Corriente a tu medida!</h1>
@@ -16,8 +17,15 @@
 	<p>Si te preocupan tus datos, <a href="/privacidad">acá</a> explicamos </br>
 	cómo los cuidamos.
 	</p>
-	<button type="submit" onclick="window.location='/hola'">Conectar cuenta</button>
+	<button type="submit" onclick="handler();">Conectar cuenta</button>
 
-	<!-- <div class="home"></div>-->
+	<div id="lightbox">
+		<iframe
+		src="https://app.fintoc.com/widget-iframe?public_key=pk_live_s48zhNZBeiLTsNn7Ny9RmPagwts-FQXg&holder_type=business&redirect_to=https://now.moonshots.cl/next&webhook_url=https://now.moonshots.cl/webhook"
+		width="360"
+		height="500"
+		frameborder="0">
+		</iframe>
+	  </div>
 </body>
 </html>
