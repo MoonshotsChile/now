@@ -1,10 +1,13 @@
 
 
 window.onload=function(){
+
+    /*
  
     var buttonfake = document.getElementById("buttonfake"); 
   
     buttonfake.addEventListener("click", handler);
+    */
 
 }
 
