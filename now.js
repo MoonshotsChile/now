@@ -32,7 +32,7 @@ app.post('/webhook', (request, response) => {
  
     dbo.collection("account").insertOne(body, function(err, res) {
       if (err) throw err;
-      console.log(res);
+      console.log("1 documento insertado");
       db.close();
     });
   });
