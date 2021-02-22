@@ -4,7 +4,7 @@ var path = require('path');
 var app = express();
 const bodyParser = require("body-parser")
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://10.136.103.77:27017/";
+var url = "mongodb://localhost:27017/";
 
 var routes = require('./routes/index');
 
@@ -37,7 +37,6 @@ app.post('/webhook', (request, response) => {
     });
   });
 });
-
 
 var server = app.listen(6000, function () {
    var host = server.address().address
