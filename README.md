@@ -9,7 +9,7 @@ Url del proyecto: [https://now.moonshots.cl](https://now.moonshots.cl)
 
 ## Stack
 
-1. Servidor virtual en digital ocean
+1. [Servidor virtual en digital ocean](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04-es)
 2. [Configuración de HTTPS](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04-es)
 3. [NodeJs WebServer](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-20-04)
 4. [Nginx Proxy inverso para nodejs](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-18-04)
