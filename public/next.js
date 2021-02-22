@@ -1,1 +1,1 @@
-window.parent.function(parametros)
+window.parent.closeLighbox();
