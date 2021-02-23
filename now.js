@@ -28,7 +28,7 @@ app.get('/accounts', function(req, res){
 
   const client = new Fintoc('sk_live_xdsA2pD7HkGUbYJsvwazcpxzrUUyzxMV');
   client.getLink('V2byLzviMRKL0Wnw_token_RxFJCu_7KwD7UCmhHMuPxzy_')
-  .then((link) => link.showAccounts())
+  .then((link) => res.send( link.showAccounts() )) 
   .catch(console.log);
 });
 
