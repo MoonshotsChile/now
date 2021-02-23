@@ -27,9 +27,22 @@ app.use(bodyParser.json());
 app.get('/accounts', function(req, res){
 
   const client = new Fintoc('sk_live_xdsA2pD7HkGUbYJsvwazcpxzrUUyzxMV');
+  /*
   client.getLink('V2byLzviMRKL0Wnw_token_RxFJCu_7KwD7UCmhHMuPxzy_')
   .then((link) => res.send( link.showAccounts() )) 
   .catch(console.log);
+  */
+ var account_out = {}
+  client.getLink('link_V2byLzviMRKL0Wnw_token_RxFJCu_7KwD7UCmhHMuPxzy_token')
+  .then((link) => {
+    link.accounts.forEach((account) => {
+      console.log(account);
+      account_out = account;
+    });
+  })
+  .catch(console.log);
+
+  res.send(account_out);
 });
 
 app.post('/webhook', (request, response) => {
