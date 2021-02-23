@@ -3,8 +3,10 @@ var swig = require('swig');
 var path = require('path');
 var app = express();
 const bodyParser = require("body-parser")
+const Fintoc = require('fintoc');
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/";
+
 
 var routes = require('./routes/index');
 
@@ -22,9 +24,16 @@ app.use('/', routes);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.get('/accounts', function(req, res){
+
+  const client = new Fintoc('sk_live_xdsA2pD7HkGUbYJsvwazcpxzrUUyzxMV');
+  client.getLink('V2byLzviMRKL0Wnw_token_RxFJCu_7KwD7UCmhHMuPxzy_')
+  .then((link) => link.showAccounts())
+  .catch(console.log);
+});
+
 app.post('/webhook', (request, response) => {
   const { body } = request;
-  console.log(body);
 
   MongoClient.connect(url, function(err, db) {
     if (err) throw err;
