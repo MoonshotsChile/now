@@ -32,17 +32,17 @@ app.get('/accounts', function(req, res){
   .then((link) => res.send( link.showAccounts() )) 
   .catch(console.log);
   */
- var account_out = {}
   client.getLink('V2byLzviMRKL0Wnw_token_RxFJCu_7KwD7UCmhHMuPxzy_')
   .then((link) => {
+    /*
     link.accounts.forEach((account) => {
       console.log(account);
-      account_out = account;
     });
+    */
+    res.json(link);
   })
   .catch(console.log);
 
-  res.send(account_out);
 });
 
 app.post('/webhook', (request, response) => {
