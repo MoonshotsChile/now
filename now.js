@@ -33,7 +33,7 @@ app.get('/accounts', function(req, res){
   .catch(console.log);
   */
  var account_out = {}
-  client.getLink('link_V2byLzviMRKL0Wnw_token_RxFJCu_7KwD7UCmhHMuPxzy_token')
+  client.getLink('V2byLzviMRKL0Wnw_token_RxFJCu_7KwD7UCmhHMuPxzy_')
   .then((link) => {
     link.accounts.forEach((account) => {
       console.log(account);
