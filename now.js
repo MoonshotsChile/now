@@ -47,7 +47,7 @@ app.get('/accounts', function(req, res){
   client.getLink('V2byLzviMRKL0Wnw_token_RxFJCu_7KwD7UCmhHMuPxzy_')
   .then((link) => link.find({ type_: 'checking_account' }))
   .then((account) => res.json(account.getMovements({ since: '2020-01-01' })))
-  .then(console.log)
+  //.then(console.log)
   .catch(console.log);
 
 });
