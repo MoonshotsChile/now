@@ -46,19 +46,40 @@ table {
 
 
 
-body {
-    background: url("landing.png") no-repeat fixed;
-    background-size: cover;
+.home{
+	background: url(landing.png) no-repeat;
+    height: 3000px;
 }
 
 #header{
-	border: 1px solid #000;
-	height:72px;
+	border: 1px solid #ccc;
+	height:84px;
 }
 
 #seccion-1{
  	border: 1px solid #000;
-        height:200px;
+      
+}
+
+#seccion-1 .title{
+	border: 1px solid #ccc;
+    height:240px;
+
+}
+
+#seccion-1 .text{
+	border: 1px solid #000;
+    height:130px;
+}
+
+#seccion-1 .btns{
+	border: 1px solid #ccc;
+    height:320px;
+}
+
+#seccion-2{
+	border: 1px solid #000;
+	   height:400px;
 }
 
 #lightbox{
@@ -71,9 +92,7 @@ body {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.home{
-    height: 1200px;
-}
+
 
 #buttonfake{
     position: absolute;
