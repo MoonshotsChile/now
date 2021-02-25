@@ -51,12 +51,14 @@ app.post('/webhook', (request, response) => {
   });
 });
 
+
 app.get('/hola', function(req, res){
-	console.log(req.query);
+	console.log(req.query.id);
   MongoClient.connect(url, function(err, db) {
     if (err) throw err;
     var dbo = db.db("now");
     var query = { id: req.query.id };
+    console.log('query'+query);
     dbo.collection("account").find(query).toArray(function(err, result) {
       if (err) throw err;
       console.log(result);
