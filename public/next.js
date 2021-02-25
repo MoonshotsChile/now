@@ -1,1 +1,1 @@
-window.parent.closeLighbox();
+window.parent.closeLighbox('{{ params.result}}');

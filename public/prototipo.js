@@ -17,6 +17,6 @@ function handler() {
     lighbox.style.display = "block";
 }
 
-function closeLighbox(){
-    console.log("llame a papi");
+function closeLighbox(result){
+    alert(result);
 }
