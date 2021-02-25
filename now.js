@@ -71,7 +71,7 @@ app.get('/hola', function(req, res){
       if (err) throw err;
       console.log(result);
       //res.json(result);
-      res.header("Content-Type",'application/json');s
+      res.header("Content-Type",'application/json');
       res.send(JSON.stringify(result, null, 4));
     });
   });
