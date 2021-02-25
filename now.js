@@ -52,7 +52,7 @@ app.post('/webhook', (request, response) => {
   });
 });
 
-router.get('/hola', function(req, res){
+app.get('/hola', function(req, res){
 	res.json(req.query);
 });
 
