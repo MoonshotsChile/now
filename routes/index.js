@@ -10,6 +10,8 @@ router.get('/', function(req, res) {
 });
 
 router.get('/next', function(req, res){
+	console.log('req',req.query);
+	console.log('res',res.json);
     res.render("next");
 });
 
@@ -19,6 +21,10 @@ router.get('/portateaqui', function(req, res){
 
 router.get('/haztecliente', function(req, res){
 	res.render('haztecliente');
+});
+
+router.get('/conectarcuenta', function(req, res){
+	res.render('conectarcuenta');
 });
 
 router.get('/hola', function(req, res){

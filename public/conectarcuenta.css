@@ -43,7 +43,7 @@ table {
 }
 
 .home{
-	background: url(landing2.png) no-repeat;
+	background: url(landing3.png) no-repeat;
     height: 1050px;
 }
 
@@ -159,4 +159,14 @@ margin-left: 53px;
     left: 35%;
     top: 15%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.iframe_fintoc{
+    background-color: #FFFFFF;
+    padding: 15px;
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+    border-radius: 54px;
+    border : 1px solid #29095E;
 }

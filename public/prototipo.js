@@ -18,6 +18,5 @@ function handler() {
 }
 
 function closeLighbox(){
-    var lighbox = document.getElementById("lightbox")
-    lighbox.style.display = "none";
+    console.log("llame a papi");
 }
