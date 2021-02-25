@@ -10,9 +10,7 @@ router.get('/', function(req, res) {
 });
 
 router.get('/next', function(req, res){
-	console.log('req',req.query);
-	console.log('res',res.json);
-    res.render("next");
+	res.json(req.query)
 });
 
 router.get('/portateaqui', function(req, res){
