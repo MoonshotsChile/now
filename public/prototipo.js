@@ -20,3 +20,7 @@ function handler() {
 function closeLighbox(result){
     alert(result);
 }
+
+function goToThePage(result){
+    alert(result)
+}

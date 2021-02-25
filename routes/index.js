@@ -10,16 +10,7 @@ router.get('/', function(req, res) {
 });
 
 router.get('/next', function(req, res){
-	//res.json(req.query)
-	/* 
-	{
-		"result":"link_created",
-		"link_id":"V2byLzviMRKL0Wnw",
-		"username":"138972496",
-		"holder_type":"individual",
-		"institution_id":"cl_banco_estado"
-	}
-	*/
+	console.log(req.query);
 	res.render('next', { params: req.query });
 
 });

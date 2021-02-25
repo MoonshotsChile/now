@@ -2,11 +2,17 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <title>Prototipo</title>
+  <title>Next</title>
   <link rel="stylesheet" href="next.css">
-  <script src="next.js"></script>
 </head>
 <body>
-<div class="home"></div>
+  <form name="link_form" action="" method="POST">
+    <input id="result" name="result" type="hidden" value="{{ params.result }}">
+    <input id="link_id" name="link_id" type="hidden" value="{{ params.link_id }}">
+    <input id="username" name="username" type="hidden" value="{{ params.username }}">
+    <input id="holder_type" name="holder_type" type="hidden" value="{{ params.holder_type }}">
+    <input id="institution_id" name="institution_id" type="hidden" value="{{ params.institution_id }}">
+  </form>
+  <script src="next.js"></script>
 </body>
 </html>
