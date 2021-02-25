@@ -1,2 +1,10 @@
 var result = document.getElementById("result").value;
-window.parent.goToThePage(result);
+var username = document.getElementById("username").value;
+var holder_type = document.getElementById("holder_type").value;
+var institution_id = document.getElementById("institution_id").value;
+window.parent.goToThePage(
+    result,
+    username,
+    holder_type,
+    institution_id
+    );

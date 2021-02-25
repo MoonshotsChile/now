@@ -27,8 +27,6 @@ router.get('/conectarcuenta', function(req, res){
 	res.render('conectarcuenta');
 });
 
-router.get('/hola', function(req, res){
-	res.render('hola');
-});
+
 
 module.exports = router;

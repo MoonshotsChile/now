@@ -21,6 +21,14 @@ function closeLighbox(result){
     alert(result);
 }
 
-function goToThePage(result){
-    alert(result)
+function goToThePage(
+    result,
+    username,
+    holder_type,
+    institution_id
+    ){
+        window.location='/hola?result='+result+
+        '?username='+username+
+        '?holder_type='+holder_type+
+        '?institution_id='+institution_id
 }

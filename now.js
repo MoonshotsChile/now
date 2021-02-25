@@ -52,6 +52,10 @@ app.post('/webhook', (request, response) => {
   });
 });
 
+router.get('/hola', function(req, res){
+	res.json(req.query);
+});
+
 var server = app.listen(6000, function () {
    var host = server.address().address
    console.log(host)
