@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/accounts', function(req, res){
-
+  
   const client = new Fintoc('sk_live_xdsA2pD7HkGUbYJsvwazcpxzrUUyzxMV');
 
   client.getLink('V2byLzviMRKL0Wnw_token_RxFJCu_7KwD7UCmhHMuPxzy_')
@@ -36,7 +36,6 @@ app.get('/accounts', function(req, res){
 
 });
 
-
 app.post('/webhook', (request, response) => {
   const { body } = request;
 
@@ -44,7 +43,7 @@ app.post('/webhook', (request, response) => {
     if (err) throw err;
     var dbo = db.db("now");
  
-    dbo.collection("account").insertOne(body, function(err, res) {
+    dbo.collection("account").insertOne(body.data, function(err, res) {
       if (err) throw err;
       console.log("1 documento insertado");
       db.close();
@@ -53,7 +52,18 @@ app.post('/webhook', (request, response) => {
 });
 
 app.get('/hola', function(req, res){
-	res.json(req.query);
+	console.log(req.query);
+  MongoClient.connect(url, function(err, db) {
+    if (err) throw err;
+    var dbo = db.db("now");
+    var query = { id: req.query.id };
+    dbo.collection("account").find(query).toArray(function(err, result) {
+      if (err) throw err;
+      console.log(result);
+      res.json(result);
+      db.close();
+    });
+  });
 });
 
 var server = app.listen(6000, function () {
