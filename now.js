@@ -70,7 +70,9 @@ app.get('/hola', function(req, res){
     dbo.collection("account").findOne(query, function(err, result) {
       if (err) throw err;
       console.log(result);
-      res.json(result);
+      //res.json(result);
+      res.header("Content-Type",'application/json');s
+      res.send(JSON.stringify(result, null, 4));
     });
   });
 });
