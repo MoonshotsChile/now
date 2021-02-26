@@ -43,34 +43,23 @@ table {
 }
 
 .home{
-	background: url(landing3.png) no-repeat;
+	/*background: url(landing3.png) no-repeat;*/
     height: 1050px;
 }
 
 #header{
-	
 	height:84px;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #cccc;
+}
+
+.logo{
+	padding-top: 15px;
+    margin-left: 49px;
 }
 
 #seccion-1{
- 
-      
-}
-
-#seccion-1 .title{
-	
-    height:240px;
-
-}
-
-#seccion-1 .text{
-	
-    height:130px;
-}
-
-#seccion-1 .btns{
-
-    height:320px;
+    background-color: #FFFFFF;  
 }
 
 .button {
@@ -161,12 +150,47 @@ margin-left: 53px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
+.steps{
+	margin-top: 82px;
+    margin-left: 92px;
+}
+.sangria{
+	margin-left: 70px;
+}
+.step{
+	margin-top: 74px;
+}
+.plata{
+	background: url(plata.png) no-repeat; 
+}
+.escudo{
+	background: url(escudo.png) no-repeat; 
+}
+.robot{
+	background: url(robot.png) no-repeat;  
+}
+.top_subtitle{
+	font-family: 'Hind', sans-serif;
+	font-size: 18px;
+	color: black;
+}
+.step_title{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	color: #4759DD;
+}
+.step_text{
+	font-family: 'Hind', sans-serif;
+	font-size: 18px;
+	color: #434343;
+}
+
 .iframe_fintoc{
     background-color: #FFFFFF;
     padding: 15px;
     position: absolute;
     bottom: 25px;
-    right: 50px;
+    right: 120px;
     border-radius: 54px;
     border : 1px solid #29095E;
 }
