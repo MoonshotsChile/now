@@ -42,35 +42,16 @@ table {
 	border-spacing: 0;
 }
 
-
-
-
-
 .home{
 	background: url(landing.png) no-repeat;
     height: 3735px;
 }
 
-#header{
-	
-	height:84px;
-}
-
-#seccion-1{
- 
-      
-}
-
-#seccion-1 .title{
-	
-    height:240px;
+#seccion-1 .title{	
 
 }
 
-#seccion-1 .text{
-	
-    height:130px;
-}
+
 
 #seccion-1 .btns{
 
@@ -78,6 +59,7 @@ table {
 }
 
 .button {
+	font-family: 'Montserrat', sans-serif;
 	background-color: #29095E; /* Green */
 	border: none;
 	color: white;
@@ -85,8 +67,8 @@ table {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
-	width: 190px;
+	font-size: 12px;
+	width: 210px;
 	height: 54px;
 	border-radius: 54px;
 
@@ -98,6 +80,7 @@ text-align: center;
   }
 
   .button_negative {
+	font-family: 'Montserrat', sans-serif;
 	background-color: #FFFFFF; /* Green */
 	border: none;
 	color: #3F3D56;	;
@@ -105,8 +88,8 @@ text-align: center;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
-	width: 190px;
+	font-size: 12px;
+	width: 210px;
 	height: 54px;
 	border-radius: 54px;
 
@@ -139,12 +122,48 @@ margin-left: 53px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-
-
 #buttonfake{
     position: absolute;
     height: 200px;
     width: 200px;
     bottom: 0px;
     left: 0px;
+}
+
+/* landing */
+
+#header{
+	height:84px;
+	background-color: #FFFFFF;
+}
+.logo{
+	padding-top: 15px;
+    margin-left: 49px;
+}
+
+#seccion-1{
+	background: url(gafas.png) no-repeat;  
+}
+
+#seccion-1 .text{
+	margin-top: 41px;
+    margin-left: 53px;
+}
+
+.title{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 64px;
+	color: #FFFFFF;
+	padding-top: 93px;
+    padding-left: 52px;
+}
+
+.text{
+	font-family: 'Hind', sans-serif;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+.btns{
+	margin-top: 34px;
 }
